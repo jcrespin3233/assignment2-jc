@@ -1,0 +1,40 @@
+---
+title: "assignment2-jc"
+output: html_document
+date: "2026-10-18"
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = TRUE)
+```
+## QAC 380 Assignment 2 Descriptive Statistics and Plots
+
+
+```{r assignment2, warning=FALSE, message=FALSE}
+# load packages
+library(readr)
+library(dplyr)
+library(ggplot2)
+library(Hmisc)
+library(descr)
+
+# call in the data set
+penguins <- read_csv("penguins.csv")
+
+# data structure
+str(penguins)
+
+# descriptives
+penguins %>%
+  summarise(
+    Mean_Bill_Length = mean(bill_length_mm, na.rm = TRUE),
+    Mean_Flipper_Length = mean(flipper_length_mm, na.rm = TRUE))
+
+penguins %>%
+  group_by(species) %>%
+  summarise(Mean_Body_Mass = mean(body_mass_g, na.rm = TRUE))
+
+freq(penguins$species)
+
+
+```
