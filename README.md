@@ -1,1 +1,3 @@
-# assignment2--your-initials-
+# assignment2-JC
+
+This repository included my files to complete assignment 2. It includes the penguins.csv data set, an R markdown script to run descriptive statistics (assignment2-JC) and the output. To reproduce my analysis find the mean bill_length and flipper_length for all penguins, and by penguin species	find the mean body_mass, as well as find the frequency of each penguin species in the data set. 
