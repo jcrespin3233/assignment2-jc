@@ -37,4 +37,9 @@ penguins %>%
 freq(penguins$species)
 
 # scatterplot body mass by flipper length
-ggplot(penguins, aes(x = flipper_length_mm, y = body_
+ggplot(penguins, aes(x = flipper_length_mm, y = body_mass_g)) +
+  geom_point() +
+  labs(title = "Scatterplot of Body Mass vs Flipper Length",
+       x = "Flipper Length",
+       y = "Body Mass")
+```
