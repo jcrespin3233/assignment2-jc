@@ -42,5 +42,5 @@ ggplot(penguins, aes(x = flipper_length_mm, y = body_mass_g)) +
   labs(title = "Scatterplot of Body Mass vs Flipper Length",
        x = "Flipper Length",
        y = "Body Mass")+
-  facet_wrap(~ species)
+  facet_wrap(~ species) #update
 ```
